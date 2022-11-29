@@ -104,5 +104,3 @@ while True:
     dontdisplayinitalprice = False
     lastprice = price
     time.sleep(delay)
-
-#comment
