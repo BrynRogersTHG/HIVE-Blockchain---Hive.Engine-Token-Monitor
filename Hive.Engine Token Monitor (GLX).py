@@ -35,8 +35,6 @@ def playalert(frequency):
     freq = frequency  # Hz
     winsound.Beep(freq, duration)
 
-    return
-
 # --------------------------------------------------------------------
 # --------------------------------------------------------------------
 # Returns the Highest Offer from the Buybook for Token
