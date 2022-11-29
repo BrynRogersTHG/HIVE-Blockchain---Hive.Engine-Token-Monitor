@@ -12,7 +12,7 @@ import os
 os.system("")  # enables ansi escape characters in terminal
 api = Api()
 token = "GLX"
-highest, lowest, lastprice, increase = 0, 100, 1, 0
+highest, lowest, lastprice, increase, delay = 0, 100, 1, 0, 5
 
 # --------------------------------------------------------------------
 # StdOut console colour definitions
@@ -57,10 +57,13 @@ def gethighoffer(strtoken):
     return straccount, fprice, fquantity
 
 # --------------------------------------------------------------------
+# --------------------------------------------------------------------
 # Main Loop; endless loop!
 
 
 dontdisplayinitalprice = True
+print(BCOLORS.OKGREEN + f"Starting up Hive.Engine Token Monitor ({token})..." + BCOLORS.ENDC)
+
 
 while True:
     account, price, quantity = gethighoffer(token)
@@ -100,4 +103,4 @@ while True:
 
     dontdisplayinitalprice = False
     lastprice = price
-    time.sleep(5)
+    time.sleep(delay)
