@@ -9,7 +9,9 @@ Change the token variable to monitor tokens other than 'GLX'
 
 token = "GLX"
 
-time.sleep(5)
+Time between parsing can be changed with the delay variable.
+
+delay = 5 (default in seconds)
 
 If you want updates faster, modify the sleep method. 5 is 5 seconds.
 
