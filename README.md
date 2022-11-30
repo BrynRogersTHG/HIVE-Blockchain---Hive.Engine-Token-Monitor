@@ -13,7 +13,7 @@ Time between parsing can be changed with the delay variable.
 
 delay = 5 (default in seconds)
 
-If you want updates faster, modify the sleep method. 5 is 5 seconds.
+If you want updates faster, delay variable, 5 is 5 seconds.
 
 <img width="758" alt="GLX Buy orders" src="https://user-images.githubusercontent.com/119123179/204586199-6fe7eb9a-c599-4b10-b23a-592feb941716.png">
 
